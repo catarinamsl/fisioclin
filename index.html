@@ -10,9 +10,10 @@
 
     <title>FisioClin</title>
   </head>
-  <body data-bs-spy="scroll" data-bs-target="#home">
+
+  <body data-bs-spy="scroll" data-bs-target=".navbar">
     <!--TOP NAVBAR-->
-    <nav class="top-nav" id="home">
+    <nav id="home" class="section top-nav">
       <div class="container">
         <div class="row justify-content-between">
           <div class="col-auto">
@@ -55,7 +56,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#home">Home</a>
+              <a class="nav-link active" href="#home">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#clinica">Clínica</a>
@@ -70,10 +71,10 @@
               <a class="nav-link" href="#pacotes">Pacotes</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Equipe</a>
+              <a class="nav-link" href="#equipe">Equipe</a>
             </li>
           </ul>
-          <a href="#" class="btn btn-brand ms-lg-3">Contact Us</a>
+          <a href="#contate-nos" class="btn btn-brand ms-lg-3">Contact Us</a>
         </div>
       </div>
     </nav>
@@ -119,7 +120,7 @@
 </div>
 
     <!--CLINICA-->
-    <section id="clinica">
+    <section id="clinica" class="section">
       <div class="container">
         <div class="row align-items-center justify-content-center">
           <!--TEXTO-->
@@ -150,8 +151,8 @@
           </div>
           <!--TEXTO FIM-->
              <!--IMAGEM-->
-              <div class="col-lg-5">
-                <img style="height: 400px; width: 600px; margin: 50px 50px;"
+              <div class="col-lg-5 imgs">
+                <img class="img-ref1"
                   src="img/office-therapy.jpg">
               </div>
              <!--IMAGEM FIM-->
@@ -161,7 +162,7 @@
       <!--CLINICA FIM-->  
 
   <!--FISIOTERAPIA-->
-<section id="fisioterapia">
+<section id="fisioterapia" class="section">
   <div class="container">
     <div class="row align-items-center justify-content-center">
       <!--TEXTO-->
@@ -202,8 +203,8 @@
         </div>
       </div>
       <!--TEXTO FIM-->
-      <div class="col-lg-5">
-        <img style="height: 500px; width: 350px; margin: 50px 50px;" src="img/patient-doing-physical-rehabilitation-helped-by-therapists.jpg">
+      <div class="col-lg-5 imgs">
+        <img class="img-ref2" src="img/patient-doing-physical-rehabilitation-helped-by-therapists.jpg">
       </div>
     </div>
   </div>
@@ -211,12 +212,12 @@
   <!--FISIOTERAPIA FIM-->
 
   <!--PILATES-->
-  <section id="pilates" class="pilates">
+<section id="pilates" class="section pilates">
     <div class="container">
       <div class="row align-items-center justify-content-center">
         <!--IMAGEM-->
-        <div class="col-lg-5">
-          <img style="height: 500px; width: 350px; margin: 50px 50px;"
+        <div class="col-lg-5 imgs">
+          <img class="img-ref3"
           src="img/pilates-woman.jpg">
         </div>
         <!--IMAGEM FIM-->
@@ -257,11 +258,11 @@
         <!--TEXTO FIM-->
       </div>
     </div>
-  </section>
+</section>
     <!--PILATES FIM-->
 
-    <!--PACOTES-->
-<section id="pacotes">
+<!--PACOTES-->
+<section id="pacotes" class="section">
   <div class="container">
     <div class="row">
       <div class="col-12 intro text-center">
@@ -269,127 +270,347 @@
         <p>Encontre os pacotes que se adequam a você.</p>
       </div>
     </div>
-    <div id="cards" class="container mb-5 mt-5">
-      <div class="row mx-0 flex-column flex-md-row mb-3">
+  <div class="pricing-area">
+    <div id="cards" class="container">
+      <div class="row">
         <!--cards inicio-->
-        <div class="col-12 col-sm-6 col-md-6 col-lg-3 p-0">
+        <div class="col-lg-4">
           <div class="table text-center px-3 mb-4">
             <span class="h6 mx-auto px-4 py-1 rounded-bottom shadow-sm title">
-            5 Sessões
-          </span>
+              5 Sessões
+            </span>
 
-              <div class="price">
-                <h1 class="text-center mb-0"
-                data-pricing-value="170">R$ 170,00</h1>
-              </div>
+            <div class="price">
+              <h1 class="text-center mb-0" data-pricing-value="170">
+                R$ 170,00
+              </h1>
+            </div>
 
-              <div>
-                <ul class="content">
-                  <li>Terapias Manuais</li>
-                  <li>Pilates</li>
-                  <li class="item-inactive">Bandagens Funcionais</li>
-                  <li class="item-inactive">Dry Needling</li>
-                  <li class="item-inactive">Auriculoterapia</li>
-                  <li class="item-inactive">Ventosaterapia</li>
-                  <li class="item-inactive">Acupuntura</li>
-                  <li class="item-inactive">Funcional com Bola Suiça</li>
-                </ul>
-                <button type="button" class="btn mb-3">Adquira agora!</button>
-              </div>
+            <div>
+              <ul class="content">
+                <li>Terapias Manuais</li>
+                <li>Pilates</li>
+                <li class="item-inactive">Bandagens Funcionais</li>
+                <li class="item-inactive">Dry Needling</li>
+                <li class="item-inactive">Auriculoterapia</li>
+                <li class="item-inactive">Ventosaterapia</li>
+                <li class="item-inactive">Acupuntura</li>
+                <li class="item-inactive">Funcional com Bola Suiça</li>
+              </ul>
+              <button type="button" class="btn mb-3">Adquira agora!</button>
+            </div>
           </div>
         </div>
         <!--cards fim-->
 
-        <!--cards inicio-->
-        <div class="col-12 col-sm-6 col-md-6 col-lg-3 p-0">
+         <!--cards inicio-->
+         <div class="col-lg-4">
           <div class="table text-center px-3 mb-4">
             <span class="h6 mx-auto px-4 py-1 rounded-bottom shadow-sm title">
-              10 Sessões</span>
+              10 Sessões
+            </span>
 
-              <div class="price">
-                <h1 class="text-center mb-0"
-                data-pricing-value="220">R$ 220,00</h1>
-              </div>
+            <div class="price">
+              <h1 class="text-center mb-0" data-pricing-value="170">
+                R$ 220,00
+              </h1>
+            </div>
 
-              <div>
-                <ul class="content">
-                  <li>Terapias Manuais</li>
-                  <li>Pilates</li>
-                  <li>Bandagens Funcionais</li>
-                  <li>Dry Needling</li>
-                  <li  class="item-inactive">Auriculoterapia</li>
-                  <li class="item-inactive">Ventosaterapia</li>
-                  <li class="item-inactive">Acupuntura</li>
-                  <li class="item-inactive">Funcional com Bola Suiça</li>
-                </ul>
-                <button type="button" class="btn mb-3">Adquira agora!</button>
-              </div>
+            <div>
+              <ul class="content">
+                <li>Terapias Manuais</li>
+                <li>Pilates</li>
+                <li>Bandagens Funcionais</li>
+                <li>Dry Needling</li>
+                <li class="item-inactive">Auriculoterapia</li>
+                <li class="item-inactive">Ventosaterapia</li>
+                <li class="item-inactive">Acupuntura</li>
+                <li class="item-inactive">Funcional com Bola Suiça</li>
+              </ul>
+              <button type="button" class="btn mb-3">Adquira agora!</button>
+            </div>
           </div>
         </div>
         <!--cards fim-->
 
-        <!--cards inicio-->
-        <div class="col-12 col-sm-6 col-md-6 col-lg-3 p-0">
+         <!--cards inicio-->
+         <div class="col-lg-4">
           <div class="table text-center px-3 mb-4">
             <span class="h6 mx-auto px-4 py-1 rounded-bottom shadow-sm title">
-              20 Sessões</span>
+              20 Sessões
+            </span>
 
-              <div class="price">
-                <h1 class="text-center mb-0"
-                data-pricing-value="400">R$ 400,00</h1>
-              </div>
+            <div class="price">
+              <h1 class="text-center mb-0" data-pricing-value="170">
+                R$ 400,00
+              </h1>
+            </div>
 
-              <div>
-                <ul class="content">
-                  <li>Terapias Manuais</li>
-                  <li>Pilates</li>
-                  <li>Bandagens Funcionais</li>
-                  <li>Dry Needling</li>
-                  <li>Auriculoterapia</li>
-                  <li>Ventosaterapia</li>
-                  <li class="item-inactive">Acupuntura</li>
-                  <li class="item-inactive">Funcional com Bola Suiça</li>
-                </ul>
-                <button type="button" class="btn mb-3">Adquira agora!</button>
-              </div>
+            <div>
+              <ul class="content">
+                <li>Terapias Manuais</li>
+                <li>Pilates</li>
+                <li>Bandagens Funcionais</li>
+                <li>Dry Needling</li>
+                <li>Auriculoterapia</li>
+                <li>Ventosaterapia</li>
+                <li>Acupuntura</li>
+                <li>Funcional com Bola Suiça</li>
+              </ul>
+              <button type="button" class="btn mb-3">Adquira agora!</button>
+            </div>
           </div>
         </div>
         <!--cards fim-->
-
-        <!--cards inicio-->
-        <div class="col-12 col-sm-6 col-md-6 col-lg-3 p-0">
-          <div class="table text-center px-3 mb-4">
-            <span class="h6 mx-auto px-4 py-1 rounded-bottom shadow-sm title">
-              40 Sessões</span>
-
-              <div class="price">
-                <h1 class="text-center mb-0"
-                data-pricing-value="770">R$ 770,00</h1>
-              </div>
-
-              <div>
-                <ul class="content">
-                  <li>Terapias Manuais</li>
-                  <li>Pilates</li>
-                  <li>Bandagens Funcionais</li>
-                  <li>Dry Needling</li>
-                  <li>Auriculoterapia</li>
-                  <li>Ventosaterapia</li>
-                  <li>Acupuntura</li>
-                  <li>Funcional com Bola Suiça</li>
-                </ul>
-                <button type="button" class="btn mb-3">Adquira agora!</button>
-              </div>
-          </div>
-        </div>
-        <!--cards fim-->
-
 
       </div>
     </div>
-    
+  </div>
+</div>  
+</section>
+<!--PACOTES FIM-->
+
+<!--EQUIPE-->
+<section id="equipe" class="section equipe">
+  <div class="container">
+
+    <div class="section-title">
+      <h2 class="text-center">Equipe</h2>
+      <p class="text-center">Conheça o time de especialistas que trabalham em nossa clínica</p>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+<!--Membro da equipe 1-->
+    <div class="col-lg-6 mt-4">
+      <div class="member d-flex align-items-start">
+        <div class="foto-equipe">
+          <img class="img-fluid" src="img/profile-pic1.svg">
+        </div>
+      <div class="member-info">
+          <h4>Jonas Antonio</h4>
+          <span>Fisioterapeuta</span>
+          <p>Lorem ipsum asd aodferj askdeor aldm apdo mri</p>
+        <div class="socials">
+          <a href=""><i class='bx bxl-facebook'></i></a>
+          <a href=""><i class='bx bxl-instagram'></i></a>
+          <a href=""><i class='bx bxl-linkedin'></i></a>
+          <a href=""><i class='bx bxl-twitter'></i></a>
+        </div>
+      </div>
+      </div>
+    </div>
+    <!--Membro da equipe 1 FIM-->
+
+    <!--Membro da equipe 2-->
+    <div class="col-lg-6 mt-4">
+      <div class="member d-flex align-items-start">
+        <div class="foto-equipe">
+          <img class="img-fluid" src="img/profile-pic2.svg">
+        </div>
+        <div class="member-info">
+          <h4>Clarisse Andrade</h4>
+          <span>Fisioterapeuta</span>
+          <p>Lorem ipsum asd aodferj askdeor aldm apdo mri</p>
+
+        <div class="socials">
+          <a href=""><i class='bx bxl-facebook'></i></a>
+          <a href=""><i class='bx bxl-instagram'></i></a>
+          <a href=""><i class='bx bxl-linkedin'></i></a>
+          <a href=""><i class='bx bxl-twitter'></i></a>
+        </div>
+      </div>
+      </div>
+    </div>
+    <!--Membro da equipe 2 FIM-->
+
+    <!--Membro da equipe 3-->
+    <div class="col-lg-6 mt-4">
+      <div class="member d-flex align-items-start">
+        <div class="foto-equipe">
+          <img class="img-fluid" src="img/profile-pic3.svg">
+        </div>
+        <div class="member-info">
+          <h4>Paula Guimarães</h4>
+          <span>Fisioterapeuta</span>
+          <p>Lorem ipsum asd aodferj askdeor aldm apdo mri</p>
+        <div class="socials">
+          <a href=""><i class='bx bxl-facebook'></i></a>
+          <a href=""><i class='bx bxl-instagram'></i></a>
+          <a href=""><i class='bx bxl-linkedin'></i></a>
+          <a href=""><i class='bx bxl-twitter'></i></a>
+        </div>
+      </div>
+      </div>
+    </div>
+    <!--Membro da equipe 3 FIM-->
+
+    <!--Membro da equipe 4-->
+    <div class="col-lg-6 mt-4">
+      <div class="member d-flex align-items-start">
+        <div class="foto-equipe">
+          <img class="img-fluid" src="img/profile-pic4.svg">
+        </div>
+        <div class="member-info">
+          <h4>Andreia Rosa</h4>
+          <span>Fisioterapeuta</span>
+          <p>Lorem ipsum asd aodferj askdeor aldm apdo mri</p>
+        <div class="socials">
+          <a href=""><i class='bx bxl-facebook'></i></a>
+          <a href=""><i class='bx bxl-instagram'></i></a>
+          <a href=""><i class='bx bxl-linkedin'></i></a>
+          <a href=""><i class='bx bxl-twitter'></i></a>
+        </div>
+      </div>
+      </div>
+    </div>
+    <!--Membro da equipe 4 FIM-->
+
+  </div>
+</div>
+  
+</section>
+<!--EQUIPE FIM-->
+
+<!--CONTATO-->
+<section id="contate-nos" class="section">
+  <div class="container">
+    <!--info-->
+    <div class="contato-container">
+      <div class="titulo-contato">
+        <h2>Entre em contato conosco</h2>
+      </div>
+      <div class="caixa">
+        <!--form-->
+        <div class="contato form">
+          <h3>Envie uma mensagem</h3>
+          <form>
+
+            <div class="form-caixa">
+              <div class="row50">
+                <div class="input-box">
+                  <span>Primeiro Nome</span>
+                  <input type="text" name="" required>
+                </div>
+                <div class="input-box">
+                  <span>Sobrenome</span>
+                  <input type="text" name="" required>
+                </div>
+              </div>
+
+              <div class="row50">
+                <div class="input-box">
+                  <span>Email</span>
+                  <input type="text" required>
+                </div>
+
+                <div class="input-box">
+                  <span>Telefone</span>
+                  <input type="text" required>
+                </div>
+              </div>
+
+              <div class="row100">
+                <div class="input-box">
+                  <span>Mensagem</span>
+                  <textarea type="text" required>
+                  </textarea>
+                </div>
+              </div>
+
+              <div class="row100">
+                <div class="input-box">
+                  <input type="submit" placeholder="Enviar">
+                </div>
+              </div>
+              
+            </div>
+          </form>
+        </div>
+
+      <!--info box-->
+      <div class="contato info">
+        <h3>Contatos</h3>
+        <div class="info-caixa">
+              <div>
+                <span><i class='bx bx-envelope' ></i></span>
+                  <span><a href="mailto:loremipsum@email.com">
+                    loremipsum@email.com
+                </a></span>
+              </div>
+
+              <div>
+                <span><i class='bx bx-map'></i></span>
+                <span><p>Rua Palace Coconus, New Dahbi <br> AUSTRALIA</p></span>
+              </div>
+
+            <div>
+              <span><i class='bx bxs-phone-call' ></i></span>
+              <span><a href="tel:+55 85 9555 9555">+55 (85) 9555-9555</a></span>
+            </div>
+            <!--social media links-->
+            <ul class="s-icons">
+              <li><a><i class='bx bxl-facebook' ></i></a></li>
+              <li><a><i class='bx bxl-instagram' ></i></a></li>
+              <li><a><i class='bx bxl-twitter' ></i></a></li>
+              <li><a><i class='bx bxl-whatsapp' ></i></a></li>
+              <li><a><i class='bx bxl-linkedin' ></i></a></li>
+            </ul>
+            <!--social media links FINAL-->
+
+          </div>
+        </div>
+
+        <!--map-->
+        <div class="contato map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.174189837403!2d-46.64579088525681!3d-23.598085068834074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a252016434b%3A0x69ce10904e229645!2sPronto%20Socorro%20do%20Hospital%20S%C3%A3o%20Paulo!5e0!3m2!1spt-BR!2sbr!4v1661783105597!5m2!1spt-BR!2sbr"
+          width="600" height="450" style="border:0;"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+    <!--info FIM-->
   </div>
 </section>
+<!--CONTATO FIM-->
+
+<!--FOOTER-->
+<section class="footer">
+  <div class="sci-footer">
+    <a href=""><i class='bx bxl-facebook'></i></a>
+    <a href=""><i class='bx bxl-instagram'></i></a>
+    <a href=""><i class='bx bxl-linkedin'></i></a>
+    <a href=""><i class='bx bxl-twitter'></i></a>
+  </div>
+
+  <ul class="list-footer">
+    <li>
+      <a href="#home">Home</a>
+    </li>
+    <li>
+      <a href="#clinica">Clínica</a>
+    </li>
+    <li>
+      <a href="#fisioterapia">Fisioterapia</a>
+    </li>
+    <li>
+      <a href="#pilates">Pilates</a>
+    </li>
+    <li>
+      <a href="#pacotes">Pacotes</a>
+    </li>
+    <li>
+      <a href="#equipe">Equipe</a>
+    </li>
+    <li>
+      <a href="#contate-nos">Contatos</a>
+    </li>
+  </ul>
+  <p class="copyright">&copy; 2022 Clinica de Fisioterapia FisioClin</p>
+</section>
+<!--FOOTER FIM-->
 
     <script src="./js/jquery.min.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>

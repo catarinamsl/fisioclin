@@ -77,7 +77,7 @@ section {
 }
 
 .navbar .navbar-nav .nav-link:hover,
-.navbar .navbar-nav .nav-link:active {
+.navbar .navbar-nav .nav-link.active {
   color: rgb(53, 108, 134);
   font-weight: 600;
 }
@@ -158,6 +158,25 @@ section {
 .owl-next:hover {
   background-color: rgba(4, 83, 119, 0.486) !important;
   color: rgb(165, 228, 244) !important;
+}
+
+/**IMAGENS **/
+
+.img-ref1 {
+  height: 400px;
+  width: 600px;
+  padding-left: 20px;
+}
+
+.img-ref2 {
+  height: 500px;
+  width: 370px;
+  padding-left: 20px;
+}
+
+.img-ref3 {
+  height: 500px;
+  width: 350px;
 }
 
 /*TIPOS DE TERAPIA*/
@@ -256,6 +275,8 @@ p {
   border-radius: 10px;
   width: 300px;
   margin: auto;
+  box-shadow: rgba(0, 0, 0, 0.739);
+  transition: all 0.5s ease;
 }
 
 #cards .price h1 {
@@ -277,6 +298,7 @@ p {
 
 .table:hover {
   background: rgb(219, 255, 255);
+  transform: scale(1.05);
 }
 
 .content {
@@ -309,4 +331,366 @@ p {
 .table span {
   background-color: rgb(11, 49, 67);
   color: rgb(165, 228, 244);
+}
+
+.pricing-area {
+  padding: 3% 0;
+  text-align: center;
+}
+
+/* EQUIPE*/
+
+#equipe {
+  background: rgb(245, 245, 245);
+}
+
+#equipe .member {
+  position: relative;
+  padding: 30px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background: white;
+  margin-left: 10px;
+  margin-right: 5px;
+}
+
+#equipe .member .foto-equipe {
+  overflow: hidden;
+  width: 180px;
+  border-radius: 50%;
+}
+
+#equipe .member .member-info {
+  padding-left: 30px;
+}
+
+#equipe .member .h4 {
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 20px;
+  color: rgb(11, 49, 67);
+}
+
+#equipe .member span {
+  display: block;
+  font-size: 15px;
+  padding-bottom: 10px;
+  position: relative;
+  font-weight: 600;
+}
+
+#equipe .member span::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 2px;
+  background: rgb(10, 169, 186);
+  bottom: 0;
+  left: 0;
+}
+
+#equipe .member p {
+  margin: 10px 0 0 0;
+  font-size: 14px;
+}
+
+#equipe .member .socials {
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#equipe .member .socials a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: rgb(234, 234, 234);
+  color: rgb(11, 49, 67);
+}
+
+#equipe .member .socials a:hover {
+  background: rgb(10, 169, 186);
+  color: rgb(234, 234, 234);
+}
+
+#equipe .member .socials a + a {
+  margin-left: 8px;
+}
+
+#equipe {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+/*CONTATE A GENTE*/
+
+#contate-nos {
+  background: linear-gradient(
+    90deg,
+    rgb(10, 169, 186) 0%,
+    rgb(10, 169, 186) 30%,
+    rgb(11, 49, 67) 30%,
+    rgb(11, 49, 67) 100%
+  );
+}
+.contato-container {
+  position: relative;
+  width: 100%;
+  padding: 40px 100px;
+}
+.contato-container .titulo-contato {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contato-container .titulo-contato h2 {
+  color: rgb(100, 222, 235);
+  font-weight: 500;
+}
+
+.form {
+  grid-area: form;
+}
+
+.info {
+  grid-area: info;
+}
+
+.map {
+  grid-area: map;
+}
+
+.contato {
+  padding: 40px;
+  background: rgb(165, 228, 244);
+}
+
+.caixa {
+  position: relative;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 5fr 4fr;
+  grid-template-areas: 'form info' 'form map';
+  grid-gap: 20px;
+  margin-top: 20px;
+}
+
+.contato h3 {
+  color: rgb(11, 81, 111);
+  font-weight: 500;
+  font-size: 1.4em;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* form */
+
+.form-caixa {
+  position: relative;
+  width: 100%;
+}
+
+.form-caixa .row50 {
+  display: flex;
+  gap: 20px;
+}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  width: 50%;
+}
+
+.form-caixa .row100 .input-box {
+  width: 100%;
+}
+
+.input-box span {
+  color: rgb(11, 49, 67);
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.input-box input {
+  padding: 5px;
+  font-size: 1.1em;
+  outline: none;
+  border: 1px solid rgb(11, 49, 67);
+  background: rgb(165, 228, 244);
+  color: rgb(36, 87, 110);
+}
+
+.input-box textarea {
+  padding: 5px;
+  font-size: 1.1em;
+  outline: none;
+  border: 1px solid rgb(11, 49, 67);
+  background: rgb(165, 228, 244);
+  color: rgb(36, 87, 110);
+  min-height: 220px;
+  margin-bottom: 10px;
+}
+
+.input-box input[type='submit'] {
+  background: rgb(10, 169, 186);
+  color: rgb(11, 49, 67);
+  border: none;
+  font-size: 1.1em;
+  max-width: 120px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 14px 15px;
+}
+
+/* info box */
+
+.info {
+  background: rgb(10, 169, 186);
+}
+
+.info h3 {
+  color: rgb(11, 49, 67);
+  text-align: center;
+}
+
+.info .info-caixa div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.info .info-caixa div span i {
+  min-width: 40px;
+  height: 40px;
+  color: rgb(10, 169, 186);
+  background: rgb(11, 49, 67);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.info .info-caixa div p {
+  color: rgb(11, 49, 67);
+  font-weight: 500;
+}
+
+.info .info-caixa div a {
+  color: rgb(11, 49, 67);
+  text-decoration: none;
+}
+.s-icons {
+  margin-top: 40px;
+  display: flex;
+}
+
+.s-icons li {
+  list-style: none;
+  margin-right: 15px;
+}
+
+.s-icons li a i {
+  color: rgb(11, 49, 67);
+  font-size: 2em;
+  background-color: rgb(10, 169, 186);
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.s-icons li a i:hover {
+  color: rgb(10, 169, 186);
+  background-color: rgb(11, 49, 67);
+}
+
+/* mapa */
+
+.map {
+  padding: 0;
+}
+
+.map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+/*footer*/
+
+.footer {
+  padding: 40px 0;
+  background-color: rgb(226, 226, 226);
+}
+
+.footer a {
+  text-decoration: none;
+  color: rgb(11, 49, 67);
+}
+
+.footer ul li a {
+  color: rgb(11, 49, 67);
+}
+
+.footer .sci-footer {
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.footer .sci-footer a {
+  font-size: 24px;
+  border: 1px solid rgb(11, 49, 67);
+  width: 40px;
+  height: 40px;
+  line-height: 38px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  margin: 0 8px;
+}
+
+.footer .sci-footer a:hover {
+  opacity: 0.6;
+}
+
+.footer ul {
+  margin-top: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.footer ul li a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer ul li {
+  display: inline-block;
+  padding: 0 16px;
+}
+
+.footer ul li a:hover {
+  opacity: 0.6;
+}
+
+.footer .copyright {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 15px;
+  color: rgb(11, 81, 111);
+}
+
+/*active scroll*/
+.active {
+  color: red;
 }

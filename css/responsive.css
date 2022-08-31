@@ -82,7 +82,7 @@
 
 /** formulario **/
 
-@media (max-width: 499px) {
+@media (max-width: 480px) {
   #contate-nos {
     background: rgb(11, 49, 67);
   }
@@ -121,9 +121,20 @@
   .contato.map {
     padding: 0;
   }
+
+  .s-icons li a i {
+    text-align: center;
+    padding: 4px;
+    font-size: 1.5rem;
+  }
+
+  .s-icons {
+    padding: 6px;
+    text-align: center;
+  }
 }
 
-@media only screen and (max-width: 991px) and (min-width: 500px) {
+@media only screen and (max-width: 991px) and (min-width: 481px) {
   #contate-nos {
     background: rgb(11, 49, 67);
   }
